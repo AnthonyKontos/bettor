@@ -1,0 +1,11 @@
+SELECT line, datetime, wagers, sportsbook_id, event_id FROM CONSENSUSHISTORY LIMIT 100;
+SELECT market_id, event, sportsbook_id, participant_id, datetime, american_odds, decimal_odds, event_id, market_id, participant_id, participant_score, profit, result, spread_total FROM OPENINGLINES LIMIT 100;
+SELECT * FROM LINEHISTORY LIMIT 100;
+SELECT league_id, event_id, season_id, event_status, location, datetime, description FROM EVENTS;
+SELECT location, country, abbreviation, division_name, conference_name, team_id, league_id FROM TEAMS;
+SELECT market_id, event, sportsbook_id, participant_id, datetime, american_odds, decimal_odds, event_id, market_id, participant_id, participant_score, profit, result, spread_total FROM CURRENTLINES LIMIT 100;
+SELECT market, event, sportsbook, participant, datetime, american_odds, decimal_odds, event_id, market_id, participant_full_name, spread_total FROM BESTLINES LIMIT 100;
+
+pyspark
+--packages com.datastax.spark:spark-cassandra-connector_2.12:3.3.0 \
+--conf spark.sql.extensions=com.datastax.spark.connector.CassandraSparkExtensions

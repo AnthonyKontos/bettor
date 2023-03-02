@@ -1,0 +1,6 @@
+SELECT LINE, DATETIME, VOLUME, WAGERS, SPORTSBOOK_ID, event_id FROM CONSENSUSHISTORY LIMIT 100;
+SELECT market_id, event, sportsbook_id, participant_id, datetime, american_odds, decimal_odds, event_id, market_id, participant_id, participant_score, profit, result FROM OPENINGLINES LIMIT 100;
+SELECT * FROM LINEHISTORY LIMIT 100;
+SELECT LEAGUE_ID, EVENT_ID, SEASON_ID, EVENT_STATUS, LOCATION, DATETIME, DESCRIPTION FROM EVENTS;
+SELECT * FROM TEAMS;
+
