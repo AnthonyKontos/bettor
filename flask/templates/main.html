@@ -1,19 +1,22 @@
 <h3>Market Buttons</h3>  
-  <form method="markets" action="/">
-    <input type="radio" name="buttonGroup" value="Half-Time Moneyline" id="2ml"><label for="2ml">Half-Time Moneyline</label>
-    <input type="radio" name="buttonGroup" value="Half-Time Total" id="2tot"><label for="2tot">Half-Time Total</label>
-    <input type="radio" name="buttonGroup" value="Half-Time Point Spread" id="2ps"><label for="2ps">Half-Time Point Spread</label>
-    <input type="radio" name="buttonGroup" value="Full-Time Moneyline" id="ml"><label for="ml">Full-Time Moneyline</label>
-    <input type="radio" name="buttonGroup" value="Full-Time Total" id="tot"><label for="tot">Full-Time Total</label>
-    <input type="radio" name="buttonGroup" value="Full-Time Point Spread" id="ps"><label for="ps">Full-Time Point Spread</label>
+  <form method="markets" action="/" id="market-form">  
+    <button class="market" id="2ml"><div class="market">Half-Time Moneyline</div></button>
+    <button class="market" id="2ps"><div class="market">Half-Time Point Spread</div></button>
+    <button class="market" id="2tot"><div class="market">Half-Time Total</div></button>
+    <br>
+    <button class="market" id="ml"><div class="market">Full-Time Moneyline</div></button>
+    <button class="market" id="ps"><div class="market">Full-Time Point Spread</div></button>
+    <button class="market" id="tot"><div class="market">Full-Time Total</div></button>
   </form>
-
-  FAVORITE STAKE:
-  <input id="fstake" name="fstake" type="number" />
-  <br />UNDERDOG STAKE:
-  <input id="ustake" name="ustake" type="number" />
-  <br />FAVORITE PROFIT:
-  <input id="uprofit" name="uprofit" type="number" />
-  <br />UNDERDOG PROFIT:
-  <input id="fprofit" name="fprofit" type="number" />
+  <br>
   
+<h3>Arbitrage Calculator</h3>
+  <form method="markets" action="/" id="calc-form">
+    STAKE:
+    <label><input id="fstake" name="fstake" type="number" placeholder="Favourite"/></label>
+    <label><input id="ustake" name="ustake" type="number" placeholder="Underdog"/></label>
+    <br>
+    PROFIT:
+    <label><input id="fprofit" name="fprofit" type="number" placeholder="Favorite"/></label>
+    <label><input id="uprofit" name="uprofit" type="number" placeholder="Underdog"/></label>
+  </form>
