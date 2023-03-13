@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='main.css'>
+  </head>
+  
+  <body>
+
+    <br>
+    <div class='col-md-6'>
+      <form method="markets" action="/" id="market-form">
+      <label><b>Markets</b></label>
+        <div id="markets">
+          <button class="market" id="2ml"><div class="market">Half-Time Moneyline</div></button>
+          <button class="market" id="2ps"><div class="market">Half-Time Point Spread</div></button>
+          <button class="market" id="2tot"><div class="market">Half-Time Total</div></button>
+          <br>
+          <button class="market" id="ml"><div class="market">Full-Time Moneyline</div></button>
+          <button class="market" id="ps"><div class="market">Full-Time Point Spread</div></button>
+          <button class="market" id="tot"><div class="market">Full-Time Total</div></button>
+        </div>
+      </form>
+    </div>
+
+    <div class='col-md-6' id=daterange>
+      <div class="form-group">
+        <label class="control-label"><b>Game Date</b></label>
+        <div class='input-group date'>
+          <input type='text' name= "daterange"/>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class='col-md-6' id=arbcalc>
+      <form method="markets" action="/" id="calc-form">
+      <label><b>Arbitrage Calculator</b></label>
+        <div id="arb-group">
+          <label>STAKE:</label>
+          <input id="fstake" name="fstake" type="number" placeholder="Favourite"/>
+          <input id="ustake" name="ustake" type="number" placeholder="Underdog"/>
+        </div>
+        <div id="arb-group">
+          <label>INVERSE ODDS:</label>
+          <input id="fodds" name="fodds" type="number" placeholder="Favourite"/>
+          <input id="uodds" name="uodds" type="number" placeholder="Underdog"/>
+        </div>
+        <div id="arb-group">
+          <label>PROFIT:</label>
+          <input id="fprofit" name="fprofit" type="number" placeholder="Favourite"/>
+          <input id="uprofit" name="uprofit" type="number" placeholder="Underdog"/>
+        <br>
+        </div>
+      </form>
+    </div>
+    
+    <head>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    </head>
+  </body>
+</html>
+

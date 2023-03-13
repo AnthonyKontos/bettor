@@ -1,0 +1,25 @@
+#daterange {
+  clear: both;
+  float: left;
+  margin-bottom: 15px;
+}
+
+#arbcalc {
+  clear: both;
+  float: left;
+}
+
+#arb-group label {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+button{
+  height: 24px;
+  width: 180px;
+  top: 50%;
+  left: 0%;
+  margin: 2.5px; 
+}
